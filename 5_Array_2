@@ -1,5 +1,0 @@
-   //How would you add the rest of the days of the week to the end of the array?
-   
-   let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
-   days.push("Friday", "Saturday", "Sunday");
-   console.log(days); // Displays all 7 days

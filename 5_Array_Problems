@@ -1,0 +1,58 @@
+//1)How would you add the rest of the days of the week to the end of the array?
+let films = ["Dracula", "Frankenstein", "The Mummy", "Babe"];
+console.log(films[2]); // Should display 'The Mummy'
+  
+  
+//2)How would you add the rest of the days of the week to the end of the array?
+   
+let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+days.push("Friday", "Saturday", "Sunday");
+console.log(days); // Displays all 7 days
+
+//3) How would you remove the last item from moons?
+let moons = ["Deimos", "Phobos", "Howard"];
+moons.pop(2);
+console.log(moons); // Should display Deimos and Phobos
+
+4))
+let takein =["array1","array2","array3"]
+takein.push("banana")
+console.log(takein)
+let i = 0;
+while (i< takein.length)
+{
+   console.log(takein[i]);
+   i=i+1; 
+}
+
+//5) Write a function that has no arguments, and returns an array of the numbers 1 through 10.
+let noArgument = () =>
+{
+    let result = [], i = 1;
+   
+   while (i<=10)
+   {
+    result.push(i);
+    i++;
+   }
+   return (result) 
+}
+console.log(noArgument())
+
+7)) 
+// create an array
+let myNums = [1, 2, 3, 4, 5];
+
+// create a variable for the sum and initialize it
+let sum = 1;
+let i=0;
+
+// iterate over each item in the array
+
+while (i<=myNums.length)
+{
+  sum += myNums[i++];
+  i++;
+}
+
+console.log(sum) // 15
