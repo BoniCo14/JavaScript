@@ -41,18 +41,16 @@ console.log(noArgument())
 
 7)) 
 // create an array
-let myNums = [1, 2, 3, 4, 5];
-
 // create a variable for the sum and initialize it
-let sum = 1;
-let i=0;
+let arr= [42, 100, 1];
+let i=0, x=0;
 
 // iterate over each item in the array
 
-while (i<=myNums.length)
+while (i<arr.length)
 {
-  sum += myNums[i++];
+  x += arr[i];
   i++;
 }
 
-console.log(sum) // 15
+console.log(x);
