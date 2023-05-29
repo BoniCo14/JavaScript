@@ -1,1 +1,6 @@
-
+/*A function called square that takes in a number and returns that number squared. Squaring a number is when you multiply a number by itself.*/
+let square = (a) =>
+{
+  return (a)*(a)'
+}
+console.log((square(4));
