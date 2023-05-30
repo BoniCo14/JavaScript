@@ -19,4 +19,13 @@ let kerningLoop = (words) => {
 }
 console.log(kerningLoop("cat"));
 
-
+//4)
+let outputArray = [];
+let zip = (array1, array2) => {
+    for (let i = 0; i < array1.length; i++) {
+        outputArray.push(array1[i]);
+        outputArray.push(array2[i]);
+    }
+}
+console.log(zip(["A", "B", "C"], ["1", "2", "3"]));
+console.log(outputArray);
