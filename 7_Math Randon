@@ -1,0 +1,8 @@
+//2)a function called coinToss that returns a random boolean with equal likelihood.
+
+function RandomBool() 
+{
+  return Math.random() <0.5;
+}
+
+console.log(RandomBool());
