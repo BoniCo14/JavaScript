@@ -1,6 +1,15 @@
-/*A function called square that takes in a number and returns that number squared. Squaring a number is when you multiply a number by itself.*/
+//1) A function called square that takes in a number and returns that number squared. Squaring a number is when you multiply a number by itself.
 let square = (a) =>
 {
   return (a)*(a)'
 }
 console.log((square(4));
+ 
+//3)a function called properCaps that takes in a string and returns a new string where the first character is capitalized if it isn't already and should end in a period if it doesn't already.
+
+let properCaps = (str) =>
+{
+  let firstLetter = str[0] //First letter of string
+  
+  if (firstLetter !== firstLetter.toUpperCase()) //To capitalize first letter
+  { 
