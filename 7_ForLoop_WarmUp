@@ -1,0 +1,23 @@
+//1) Write code that generates the following message using console.log():
+
+let countDown = () => {
+  for (let i = 100; i >= 1; i -= 1) {
+    console.log(i);
+  }
+  console.log("Lift off!");
+};
+
+console.log(countDown());
+
+//2) Write a function called buildTriangle(n) that takes in a number and generates a text triangle like this where the number of rows is the number passed in. Each row is generated using console.log().
+
+let buildTriangle = (n) => {
+  let row = "";
+
+  for (let i = 0; i < n; i += 1) {
+    row = row + "#";
+    console.log(row);
+  }
+};
+
+console.log(buildTriangle(8));
