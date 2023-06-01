@@ -1,0 +1,32 @@
+//1)a function called rollADice() that will return a random number from 1 to 6 each time you call it.
+let rollADice = () => {
+  for (let i = 1; i <= 100; i += 1) {
+    Math.floor(Math.random() * 6) + 1;
+  }
+};
+console.log(rollADice());
+
+//2)a function called coinToss that returns a random boolean with equal likelihood.
+
+let flipACoin = () => {
+  let randomNum = Math.random(); //generate from 0 to 0.99999999
+  if (randomNum < 0.5) {
+    return "heads";
+  } else {
+    return "tails";
+  }
+};
+
+console.log(flipACoin());
+
+//3))a function called rollCheatingDice(num) that takes in a number from 1 to 6. This function should return a random number from 1 to 6, but returns the number you pass in about 50% of the time.
+let rollCheatingDice = (num) => {
+  let randomNum = Math.random();
+  let randomDiceRoll = rollADice(); //call the function name from problem 1. So that, we do not need to repeat the code  
+
+  if (randomNum < 0.5) {
+    return randomDiceRoll;
+  } else {
+    return num;
+  }
+};
