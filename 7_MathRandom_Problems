@@ -1,0 +1,19 @@
+//1)a function called dice that returns a random number between 1 and 6.
+let dice = () => {
+  for (let i = 1; i <= 100; i += 1) {
+    Math.floor(Math.random() * 6) + 1;
+  }
+};
+console.log(dice());
+
+//3)
+let coinToss = () => {
+  let randomNum = Math.random(); //generate from 0 to 0.99999999
+  if (randomNum < 0.5) {
+    return "heads";
+  } else {
+    return "tails";
+  }
+};
+
+console.log(coinToss());
