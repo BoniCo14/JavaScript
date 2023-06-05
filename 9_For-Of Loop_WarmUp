@@ -1,0 +1,5 @@
+//1 Write a function called sum. This should take in an array of numbers and return its sum. We have done this with while loops and for loops before. How can you do this using a for-of loop?
+createNumberArray(5); // returns [1, 2, 3, 4, 5]
+
+//2 Write a function called sum. This should take in an array of numbers and return its sum. We have done this with while loops and for loops before. How can you do this using a for-of loop?
+countSpaces("This is an example"); // returns 3
