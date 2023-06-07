@@ -1,0 +1,37 @@
+//1
+let speak = function()
+{
+    console.log("Hello.");
+}
+let sleep = function()
+{
+    console.log("Good night!");
+}
+let wakeUp = function()
+{
+    console.log("Good morning!");
+}
+let work = function()
+{
+    console.log("Working...");
+}
+
+let robot = 
+{
+    hello: speak,
+    goodNight: sleep,
+    goodMorning: wakeUp,
+    working: work
+};
+
+
+//2
+  let startRobot = function(inputObj)
+{
+    inputObj.goodMorning;
+    inputObj.hello;
+    inputObj.working;
+    inputObj.goodNight;
+}
+
+startRobot(robot);
