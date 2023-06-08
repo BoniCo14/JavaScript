@@ -1,0 +1,72 @@
+//1 
+//Write a function called openBankAccount. 
+//This function should take in a string for the account-holder's name. 
+//This function should return an object with 2 fields: name and balance which is 0
+let openBankAccount = function (accountName) {
+    let accountObj = {
+      name: accountName,
+      balance: 0,
+    };
+  
+    return accountObj;
+  };
+  
+  let account = openBankAccount("Zeke");
+  console.log(account); // { name: 'Zeke', balance: 0 }
+
+//#2
+//Modify your openBankAccount function so that it includes 2 additional fields. These fields should be methods:
+//[withdraw] - a function that takes in a number. This number gets subtracted from the balance.
+//[deposit] - a function that takes in a number. This number gets added to the balance.
+//HINT: These functions should be written using [function] and [this.balance].
+
+let openBankAccount = function (accountName) {
+    let accountObj = {
+      name: accountName,
+      balance: 0,
+      withdraw: function (numberMinus) {
+        return this.balance -= numberMinus;
+      },
+      deposit: function (numberAdd) {
+        return this.balance += numberAdd;
+      },
+    };
+  
+    return accountObj;
+  };
+  
+  let account = openBankAccount("Zeke");
+  console.log(account.balance); // Expect 0
+  
+  account.deposit(300);
+  console.log(account.balance); // Expect 300
+  
+  account.withdraw(120);
+  console.log(account.balance); // Expect 180
+ 
+// #3 
+//Add another field to your object. 
+//This field should be a method called [checkStatus]. 
+//It should call console.log and display a string like this:
+  let openBankAccount = function (accountName) {
+    let accountObj = {
+      name: accountName,
+      balance: 0,
+      withdraw: function (numberMinus) {
+        return this.balance -= numberMinus;
+      },
+      deposit: function (numberAdd) {
+        return this.balance += numberAdd;
+      },
+      checkStatus: function () {
+        console.log("Hello, " + this.name + "! Your current balance is " + this.balance);
+      },
+    };
+  
+    return accountObj;
+  };
+  
+  let account = openBankAccount("Zeke");
+  account.deposit(16000);
+  account.withdraw(78);
+  account.checkStatus(); // Hello, Zeke! Your current balance is 15922
