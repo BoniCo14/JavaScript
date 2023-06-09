@@ -1,0 +1,8 @@
+//4
+let words = "The rain in Spain falls mainly on the plain.";
+//"The RAIN RAIN RAIN on the PLAIN PLAIN PLAIN."
+let rain = words.substring(4,9).toUpperCase().repeat(3);
+let plain = words.substring(37,43).toUpperCase().repeat(3);
+
+let answer = words.substring(0,4)+rain+words.substring(31,37)+plain+".";
+console.log(answer);
