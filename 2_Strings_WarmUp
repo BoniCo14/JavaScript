@@ -1,0 +1,6 @@
+//let message = "Coconuts are mammals because they have hair and produce milk.";
+//Write an expression that creates a new string that is a copy of the original string repeated 5 times. Do not use the + operator.
+//Write an expression that tells you whether or not the last character in the message is a period. Do not use .length.
+//Write an expression that finds the distance of the first 'e' from the beginning of the string.
+//Hint: this offset is sometimes called the "index".
+//Challenge: Write an expression that finds the distance of the last e from the end of the string
