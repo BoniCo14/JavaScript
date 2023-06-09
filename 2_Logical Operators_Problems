@@ -1,0 +1,11 @@
+//8 
+Using Math.random() write an expression that has a 30% chance of being true, and a 70% chance of being false.
+console.log(Math.random() >= 0.25)
+
+//9
+//The following complicated expression will return the number of seconds that have passed since the beginning of 1970:
+//(new Date().getTime() / 1000)
+//Don't worry about the expression itself, other than the fact that this returns a number.
+//A traffic light is green for 20 seconds, yellow for 5 seconds, and red for 40 seconds.
+//At the beginning of 1970, it turned green.
+//In code.js write some code that uses console.log() and the expression above to describe the color of the traffic light right now.
